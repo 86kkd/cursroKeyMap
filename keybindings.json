@@ -1,0 +1,47 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+n",
+        "command": "aichat.newchataction"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-aichat.newchataction"
+    },
+    {
+        "key": "space w",
+        "command": "workbench.action.files.save",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "workbench.action.increaseViewSize",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-workbench.action.increaseViewSize",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.decreaseViewSize",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    // 在 keybindings.json 中添加
+    {
+        "key": "ctrl+i",
+        "command": "-composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "alt+i", // 或其他组合键
+        "command": "composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    }
+]
