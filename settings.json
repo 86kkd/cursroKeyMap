@@ -21,15 +21,7 @@
     // Which Key 配置
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
-    // which key 配置
-    "whichkey.bindings": [
-        {
-            "key": "o",
-            "name": "Toggle Explorer",
-            "type": "command",
-            "command": "workbench.view.explorer"
-        }
-    ],
+   
     
     // 禁用原始的 Ctrl+Space 绑定
     "keyboard.dispatch": "keyCode",
@@ -63,8 +55,30 @@
             "commands": ["git-graph.view"]
         },
         {
+            "before": ["<leader>", "g", "s"],
+            "commands": ["git.stageSelectedRanges"]
+        },
+        {
+            "before": ["<leader>", "g", "d"],
+            "commands": ["git.openChange"]  
+        },
+        {
+            "before": ["<leader>", "b", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
             "before": ["<leader>","t","f"],
             "commands": ["workbench.action.terminal.focus"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "g", "s"],
+        "commands": ["git.stageSelectedRanges"]
+        },
+        {
+            "before": ["<leader>", "g", "c"],
+            "commands": ["git.commit"]
         }
     ]
 }
