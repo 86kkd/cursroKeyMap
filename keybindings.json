@@ -9,11 +9,6 @@
         "command": "-aichat.newchataction"
     },
     {
-        "key": "space w",
-        "command": "workbench.action.files.save",
-        "when": "editorTextFocus && vim.mode == 'Normal'"
-    },
-    {
         "key": "ctrl+right",
         "command": "workbench.action.increaseViewSize",
         "when": "!isAuxiliaryWindowFocusedContext"
@@ -52,9 +47,9 @@
     {
         "key": "ctrl+p",
         "command": "-extension.vim_ctrl+p",
-        "when": "editortextfocus && vim.active && vim.use<c-p> && !indebugrepl || vim.active && vim.use<c-p> && !indebugrepl && vim.mode == 'commandlineinprogress' || vim.active && vim.use<c-p> && !indebugrepl && vim.mode == 'searchinprogressmode'"
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
-        {
+    {
         "key": "tab",
         "command": "-workbench.action.nextEditor",
         "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
