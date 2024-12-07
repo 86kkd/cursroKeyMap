@@ -43,5 +43,10 @@
         "key": "alt+i", // 或其他组合键
         "command": "composer.startComposerPrompt",
         "when": "composerIsEnabled"
+    }，
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "sideBarFocus || explorerViewletFocus"
     }
 ]
