@@ -42,7 +42,7 @@
     {
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "sideBarFocus || explorerViewletFocus || filesExplorerFocus || searchViewletFocus || inSearchEditor || hasSearchResult"
+        "when": "!vim.active || vim.mode != 'Insert' && (sideBarFocus || filesExplorerFocus || searchViewletFocus || inSearchEditor || hasSearchResult)"
     },
     {
         "key": "ctrl+p",
