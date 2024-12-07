@@ -1,0 +1,70 @@
+{
+    "window.commandCenter": 1,
+    "workbench.colorTheme": "Lunar-dark-theme",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "terminal.integrated.inheritEnv": false,
+
+
+    // Which Key 配置
+    "whichkey.sortOrder": "alphabetically",
+    "whichkey.delay": 0,
+    // which key 配置
+    "whichkey.bindings": [
+        {
+            "key": "o",
+            "name": "Toggle Explorer",
+            "type": "command",
+            "command": "workbench.view.explorer"
+        }
+    ],
+    
+    // 禁用原始的 Ctrl+Space 绑定
+    "keyboard.dispatch": "keyCode",
+    
+    // Vim 相关配置
+    "vim.leader": "<space>",
+    "vim.useCtrlKeys": true,
+    "vim.handleKeys": {
+        "<space>": false
+    },
+    "vim.mode.normal.enableGlobalUI": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": [":w"]
+        },
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["actions.find"]
+        },
+        {
+            "before": ["<leader>", "f", "p"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "g", "g"],
+            "commands": ["git-graph.view"]
+        },
+        {
+            "before": ["<leader>","t","f"],
+            "commands": ["workbench.action.terminal.focus"]
+        }
+    ]
+}
