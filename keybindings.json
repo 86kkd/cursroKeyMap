@@ -53,5 +53,10 @@
         "key": "ctrl+p",
         "command": "-extension.vim_ctrl+p",
         "when": "editortextfocus && vim.active && vim.use<c-p> && !indebugrepl || vim.active && vim.use<c-p> && !indebugrepl && vim.mode == 'commandlineinprogress' || vim.active && vim.use<c-p> && !indebugrepl && vim.mode == 'searchinprogressmode'"
+    },
+        {
+        "key": "tab",
+        "command": "-workbench.action.nextEditor",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
     }
 ]
