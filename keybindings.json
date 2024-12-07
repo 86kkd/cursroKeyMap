@@ -47,6 +47,6 @@
     {
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "sideBarFocus || explorerViewletFocus"
+        "when": "sideBarFocus || explorerViewletFocus || filesExplorerFocus || searchViewletFocus || inSearchEditor || hasSearchResult"
     }
 ]
