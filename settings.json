@@ -39,7 +39,7 @@
             "commands": [":w"]
         },
         {
-            "before": ["<leader>", "f", "f"],
+            "before": ["/"],
             "commands": ["actions.find"]
         },
         {
