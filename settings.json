@@ -66,6 +66,29 @@
             "before": ["<leader>", "b", "d"],
             "commands": ["workbench.action.closeActiveEditor"]
         },
+        // 关闭其他标签页
+        {
+            "before": ["<leader>", "b", "o"],
+            "commands": ["workbench.action.closeOtherEditors"]
+        },
+        // 关闭所有标签页
+        {
+            "before": ["<leader>", "b", "a"],
+            "commands": ["workbench.action.closeAllEditors"]
+        },
+        // 关闭右侧标签页
+        {
+            "before": ["<leader>", "b", "r"],
+            "commands": ["workbench.action.closeEditorsToTheRight"]
+        },
+        {
+            "before": ["[", "b"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["]", "b"],
+            "commands": ["workbench.action.nextEditor"]
+        },
         {
             "before": ["<leader>","t","f"],
             "commands": ["workbench.action.terminal.focus"]
